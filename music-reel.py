@@ -219,7 +219,7 @@ def process_video(
     # Text overlay filter
     text_filter = (
         f"drawtext=text='{title_escaped}':"
-        f"fontsize=48:fontcolor=white:"
+        f"fontsize=60:fontcolor=white:"
         f"x=(w-text_w)/2:y=h*0.25:"
         f"borderw=3:bordercolor=black:"
         f"font=sans-serif"
@@ -229,8 +229,8 @@ def process_video(
         subtitle_escaped = subtitle.replace("'", "'\\''").replace(":", "\\:")
         text_filter += (
             f",drawtext=text='{subtitle_escaped}':"
-            f"fontsize=32:fontcolor=white:"
-            f"x=(w-text_w)/2:y=h*0.25+70:"
+            f"fontsize=40:fontcolor=white:"
+            f"x=(w-text_w)/2:y=h*0.25+100:"
             f"borderw=2:bordercolor=black:"
             f"font=sans-serif"
         )
