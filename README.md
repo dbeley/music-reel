@@ -13,7 +13,7 @@ Analyzes audio to find the most interesting solo moments, then converts the segm
 ## Usage
 
 ```bash
-python music-reels.py "Alice In Wonderland.mp4"
+python music-reel.py "Alice In Wonderland.mp4"
 ```
 
 Output is written to `<input>_reel.mp4` in the same directory.
@@ -49,22 +49,22 @@ CLI flags override those values.
 
 ```bash
 # Auto-detect the best 30s and center-crop to 9:16
-python music-reels.py "My Solo.mp4"
+python music-reel.py "My Solo.mp4"
 
 # 45-second clip with blurred background
-python music-reels.py "My Solo.mp4" --duration 45 --format blur
+python music-reel.py "My Solo.mp4" --duration 45 --format blur
 
 # Manually choose the segment
-python music-reels.py "Concert.mp4" --start 120 --end 165
+python music-reel.py "Concert.mp4" --start 120 --end 165
 
 # Keep the whole video (no cutting)
-python music-reels.py "Full Set.mp4" --full-video
+python music-reel.py "Full Set.mp4" --full-video
 
 # Process everything in a folder
-python music-reels.py ./recordings/ --batch
+python music-reel.py ./recordings/ --batch
 
 # Custom title and subtitle
-python music-reels.py "take2.mp4" --title "Cherokee" --subtitle "🎹 chorusing"
+python music-reel.py "take2.mp4" --title "Cherokee" --subtitle "🎹 chorusing"
 ```
 
 ## How it works
